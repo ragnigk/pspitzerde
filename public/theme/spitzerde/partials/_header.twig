@@ -17,24 +17,15 @@
       <div class="row">
         <div class="rowEqualHeight-lg">
           <div class="col-lg-3 col-md-12 col-lg-push-9">
-          
-            <div class="headerMeta clearfix pull-left hidden-xs hidden-lg">
-                  
 
-
-<ul  class="navMeta">
-                    <li><a href="/" title='' class=''>Home</a></li>
-                        <li><a href="/gottesdienst" title='' class=''>Gottesdienst</a></li>
-                        <li><a href="/downloads" title='' class=''>Downloads</a></li>
-                        <li><a href="http://www.citykircheberlin.de/" title='' class=''>Gemeindeleben</a></li>
-                        <li><a href="/kontakt" title='' class=''>Kontakt</a></li>
-                        <li><a href="/impressum" title='' class=''>Impressum</a></li>
-    </ul>
+            <div class="headerMeta clearfix pull-left hidden-xs hidden-lg">                  
+              {{ menu('main1', 'partials/_sub_menuMeta.twig') }}
               <div class="searchWrap"><form action="" method="post" id="indexedsearch">
-              <input name="tx_indexedsearch[sword]" value="" placeholder="Suche" class="searchbox-sword" onfocus="this.value=''" type="text">
-              <input name="tx_indexedsearch[sections]" value="0" type="hidden">
-              <input name="tx_indexedsearch[submit_button]" value="Search" type="hidden">
-              <button type="submit" name="submit" class="searchBtn" title="Suche">Suche</button></form></div>                  
+                <input name="tx_indexedsearch[sword]" value="" placeholder="Suche" class="searchbox-sword" onfocus="this.value=''" type="text">
+                <input name="tx_indexedsearch[sections]" value="0" type="hidden">
+                <input name="tx_indexedsearch[submit_button]" value="Search" type="hidden">
+                <button type="submit" name="submit" class="searchBtn" title="Suche">Suche</button></form>
+              </div>                  
               <ul class="navLanguage clearfix">
                 <li><a href="" target="_top" class="ico_en">English</a></li>
               </ul>                  
@@ -48,22 +39,11 @@
                 <h2><a rel="home" href="/">Pastor Spitzer</a></h2>
               </div>
             </div>
-          </div>
+          </div>              
               
-              
-              <div class="col-lg-9 col-md-12 col-lg-pull-3 navMainWrap">
-                <div class="headerMeta clearfix visible-lg">                  
-                      
-
-
-<ul  class="navMeta">
-                    <li><a href="/" title='' class=''>Home</a></li>
-                        <li><a href="/gottesdienst" title='' class=''>Gottesdienst</a></li>
-                        <li><a href="/downloads" title='' class=''>Downloads</a></li>
-                        <li><a href="http://www.citykircheberlin.de/" title='' class=''>Gemeindeleben</a></li>
-                        <li><a href="/kontakt" title='' class=''>Kontakt</a></li>
-                        <li><a href="/impressum" title='' class=''>Impressum</a></li>
-    </ul>                  
+          <div class="col-lg-9 col-md-12 col-lg-pull-3 navMainWrap">
+            <div class="headerMeta clearfix visible-lg">                  
+                {{ menu('main1', 'partials/_sub_menuMeta.twig') }}                
                   <div class="searchWrap">
                   <form action="/service/suche.html" method="post" id="indexedsearch">
                   <input name="tx_indexedsearch[sword]" value="" placeholder="Suche" class="searchbox-sword" onfocus="this.value=''" type="text">
@@ -75,15 +55,7 @@
                   </ul>
                 </div>
                 <nav class="navMain clearfix">
-                                    
-                      
-
-
-<ul  class="firstLevel clearfix hidden-xs">
-                    <li><a href="/pastor" title=''>Über Pastor Spitzer</a><ul class="navDropdown" data-submenu><li><a href="/glaubensbekenntnis" title=''>Glaubensbekenntnis</a></li><li><a href="/pastor" title=''>Pastor Spitzer</a></li><li><a href="/fotogalerie" title=''>Fotogalerie</a></li></ul></li>
-                        <li><a href="/mediathek" title=''>Mediathek / TV</a><ul class="navDropdown" data-submenu><li><a href="/medien" title=''>Medien</a></li><li><a href="/sender" title=''>Sendeplätze</a></li><li><a href="/radio" title=''>Internetradio</a></li></ul></li>
-                        <li><a href="/shop" title=''>Shop</a></li>
-    </ul>
+                  {{ menu('main2', 'partials/_sub_menuMain.twig') }} 
                   
                   <ul class="firstLevel myKktWrap clearfix">
                     <li>
@@ -173,3 +145,16 @@
         </div>
       </nav>
     </header>
+    <div class="stickyHeaderHeightCompensate" style="height: 135px;"></div>
+    <div class="container-fluid navPathWrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <nav>
+              <ul class="navPath clearfix"><li>Home > Über Pastor Spitzer</li></ul>
+            </nav>
+          </div>
+          <div class="col-md-4"></div>
+        </div>
+      </div>
+    </div>
