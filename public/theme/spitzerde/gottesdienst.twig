@@ -50,57 +50,42 @@ h1.new-single-title {
     margin-top: 0.5em;
 }
 </style>
-<div class="container-fluid navPathWrap">
+    <div class="container-fluid navPathWrap">
       <div class="container">
         <div class="row">
           <div class="col-md-8">
             <nav>
-              <ul class="navPath clearfix"><li>Home > Über Pastor Spitzer</li></ul>
+              <ul class="navPath clearfix"><li>Home > Gottesdienst</li></ul>
             </nav>
           </div>
           <div class="col-md-4"></div>
         </div>
       </div>
     </div>
+    
 <main class="container-fluid contentWrap">
   <div class="container">
     <div class="row equalHeight">
       <div style="min-height: 1345px;" class="col-md-8 contentMain equalize" role="main">
         <!--TYPO3SEARCH_begin-->
           <div id="c10885" class="csc-default"><div class="tx-dce-pi1">
-	
+    
   
 
     <div class="teaserBlock teaserBlock1 clearfix">
       <div class="row">
         <div class="col-sm-12" style="margin-top: 28px;">
           <div class="teaserBlockElement">
+          
+                {% setcontent artikel = 'entries/2' %}
             
-                <div class="teaserBlockElementImage" style="background-image: url('{{paths.theme}}img/bibelverse.jpg');">
-                  
-                  {% setcontent bbv = 'bibelverse' where { datefield: 'today' } %}
-                     
-                  <div class="atb-text-wrap">
-                    <div class="atb-text">
-                        <h1 id="wdd-inner-article-title" class="new-single-title">Bibeltext für Heute</h1>
-                        <div class="post-pub-info">
-                            <div class="ppi-author">
-                                <div class="ppis">   
-                                {% for vers in bbv %}
-                                    {{ vers.content }}
-                                    <p>Text für den {{ vers.datefield | date("d.m.Y") }}</p>   
-                                {% endfor %}
-                                </div>  
-                            </div> 
-                        </div>
-                    </div>
-                </div>
+                <div class="teaserBlockElementImage" style="background-image: url('/files/{{artikel.image}}');">
                 
                 </div>
-                {% setcontent artikel = 'entries/1' %}
                 
               <div id="c11202" class="csc-default" style="margin-top: 30px;"><div class="csc-header csc-header-n2"><h1>{{ artikel.title }}</h1></div>
-              {{ artikel.body }}
+              {{ artikel.body }}              
+
               <p style="margin-top: 40px;text-align: center;"><img src="{{paths.theme}}img/teilen.png"></p>
 </div>
               
