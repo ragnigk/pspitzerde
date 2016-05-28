@@ -1,0 +1,24 @@
+        {% setcontent mycont = 'asitenavis' orderby 'position' %}
+        
+        <aside style="min-height: 1345px;" class="col-md-4 contentAside equalize">
+          {% for cont in mycont %}
+           {% if cont.social == false %}
+          <div id="c12024" class="csc-default">
+            <h3>{{ cont.title }}</h3>
+            {{ cont.content }}
+            <p class="bodytext"><a href="{{ cont.buttonlink }}" class="internal-link btn-secondary">{{ cont.buttontext }}</a></p>
+          </div>
+          <div class="csc-default"><div class="divider"><hr></div></div>
+          {% else %}
+          <div id="c12232" class="csc-default"><div class="csc-header csc-header-n3">
+          <h3>{{ cont.title }}</h3></div>
+          <div class="teaserBlockElementImage">
+          {% for image in cont.image %}
+          <img src="{{ image.filename|image }}">
+          {% endfor %}
+          </div>
+          </div>
+          <div class="csc-default"><div class="divider"><hr></div></div>
+           {% endif %}
+          {% endfor %}
+      </aside>
