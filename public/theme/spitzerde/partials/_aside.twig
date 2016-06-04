@@ -1,14 +1,6 @@
         {% setcontent mycont = 'asitenavis' orderby 'position' %}
 
-        <aside style="min-height: 1345px;" class="col-md-4 contentAside equalize">
-          {% if '/gottesdienst' == paths.current %}
-          <div id="c12024" class="csc-default">
-              <h3>Gottesdienst verpasst?</h3>
-              <h4><a href="/download" class="internal-link">Predigt zum Nachlesen</a></h4>
-              <h4><a href="/shop" class="internal-link">Gottesdienst zum Nachhören</a></h4>
-          </div>
-          <div class="csc-default"><div class="divider"><hr></div></div>
-          {% endif %}
+        <aside style="min-height: 1345px;" class="col-md-4 contentAside equalize">          
           {% for cont in mycont %}
            {% if cont.social == false %}
           <div id="c12024" class="csc-default">
@@ -29,4 +21,4 @@
           <div class="csc-default"><div class="divider"><hr></div></div>
            {% endif %}
           {% endfor %}
-      </aside>
+        </aside>

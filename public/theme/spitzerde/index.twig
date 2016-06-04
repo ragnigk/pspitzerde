@@ -49,19 +49,34 @@ h1.new-single-title {
     font-size: 1.1em;
     margin-top: 0.5em;
 }
+.box {
+    float: left;
+    padding: 14px;
+    border: 1px solid #ddd1bb;
+    width: 100%;
+    margin: 7px 14px 14px 0;
+}
+.st-teaser-box {
+    background-color: rgba(255,255,255,0.7);
+    margin: 30px 0 0 0;
+}
+.box p .stichwort {
+    font-family: 'CallunaSemibold',Georgia,'Times New Roman',Times,serif;
+    color: #9f8766;
+}
+.box img {
+    width: 50%;
+    height: auto;
+    float: left;
+    margin-right: 14px;
+    vertical-align: middle;
+    border: 0;
+}
+.teaserBlockElementImage img {
+    margin-right: 20px;
+}
 </style>
-<div class="container-fluid navPathWrap">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-8">
-            <nav>
-              <ul class="navPath clearfix"><li>Home > Über Pastor Spitzer</li></ul>
-            </nav>
-          </div>
-          <div class="col-md-4"></div>
-        </div>
-      </div>
-    </div>
+
 <main class="container-fluid contentWrap">
   <div class="container">
     <div class="row equalHeight">
@@ -97,6 +112,20 @@ h1.new-single-title {
                 </div>
                 
                 </div>
+                
+                <div class="col-md-12" style="margin-top:10px;margin-bottom:35px;padding-left:0;padding-right:0">
+                    <div class="box st-teaser-box">
+                        <h3 style="display:block">
+                            <a href="/termine">Pastor Spitzer in Korea</a>
+                        </h3>
+                        <a href="/termine"><img alt="Pastor Spitzer in Korea" src="{{paths.theme}}img/volkhardreist.jpg"></a>
+                        <p>
+                            <span class="stichwort">Evangelisation</span>&nbsp;-&nbsp;Wenn Volkhard nicht in Berlin ist, würde dieser Block erscheinen.
+                        </p>
+                        <p class="buch">Pastor Sitzer ist vom 12. Juni bis 26. Juni auf einem Kongress in Gyeongju</p>
+                    </div>
+                </div>
+                
                 {% setcontent artikel = 'entries/1' %}
                 
               <div id="c11202" class="csc-default" style="margin-top: 30px;"><div class="csc-header csc-header-n2"><h1>{{ artikel.title }}</h1></div>

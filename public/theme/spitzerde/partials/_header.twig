@@ -31,19 +31,19 @@
               </ul>                  
             </div>
             <div class="homeLinkWrap clearfix">
-              <div class="homeLink">
-                <a href="/" target="_top" title="Pastor Spitzer" rel="home">
+              <div class="homeLink" style="min-height: 55px">
+                <!--a href="/" target="_top" title="Pastor Spitzer" rel="home">
                   <img src="/theme/spitzerde/img/logo.jpg" alt="Logo Pastor Spitzer" class="hidden-print">
                   <img src="/theme/spitzerde/img/print_logo.jpg" alt="Logo Pastor Spitzer" class="visible-print-block">
                 </a>
-                <h2><a rel="home" href="/">Pastor Spitzer</a></h2>
+                <h2><a rel="home" href="/">Pastor Spitzer</a></h2-->
               </div>
             </div>
           </div>              
               
           <div class="col-lg-9 col-md-12 col-lg-pull-3 navMainWrap">
             <div class="headerMeta clearfix visible-lg">                  
-                {{ menu('main1', 'partials/_sub_menuMeta.twig') }}                
+                <!--{ { menu('main1', 'partials/_sub_menuMeta.twig') } }                
                   <div class="searchWrap">
                   <form action="/service/suche.html" method="post" id="indexedsearch">
                   <input name="tx_indexedsearch[sword]" value="" placeholder="Suche" class="searchbox-sword" onfocus="this.value=''" type="text">
@@ -53,54 +53,15 @@
                   <ul class="navLanguage clearfix">
                   <li><a href="" target="_top" class="ico_en">English</a></li>
                   </ul>
-                </div>
+                </div-->
                 <nav class="navMain clearfix">
                   {{ menu('main2', 'partials/_sub_menuMain.twig') }} 
-                  
-                  <ul class="firstLevel myKktWrap clearfix">
-                    <li>
-                      <div class="userInfoWrap" >
-                        <div class="userInfo">
-                          <div class="nav navLogin loggedIn">
-                            <div class="userNameWrap">
-                                <a class="myKKT loggedIn" title="Ausloggen" href="/">Frag mich</a>
-                            </div>
-                            <ul class="navUser navDropdown">
-                                <li class="leftUserInfoColumn"></li>
-                                <li class="rightUserInfoColumn">
-                                    <a class="loginLink" title="Ausloggen" href="">Ausloggen</a>
-                                    <div>
-                                        <div><a href="">Übersicht</a></div>
-                                        <div class="hide"></div>
-                                    </div>
-                                    <div>
-                                        <div><a href="">Profil bearbeiten</a></div>
-                                        <div class="hide"></div>
-                                    </div>
-                                </li>
-                            </ul>
-                          </div>
-
-                          <div style="display: block;" class="nav navLogin notLoggedIn">
-                            <div class="userNameWrap">
-                                <a class="myKKT" title="Einloggen" href="">Frag mich</a>
-                            </div>
-                            <ul class="navUser navDropdown">
-                                <li class="leftUserInfoColumn">
-                                  <div>
-                                    <div><a href="">Neu hier?</a></div>
-                                    <div class="hide"></div>
-                                  </div>
-                                </li>
-                                <li class="rightUserInfoColumn">
-                                  <a class="loginLink" title="Einloggen" href="">Einloggen</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                      </div>
-                    </li>
-                  </ul>
+                  <div class="searchWrap">
+                  <form action="/service/suche.html" method="post" id="indexedsearch">
+                  <input name="tx_indexedsearch[sword]" value="" placeholder="Suche" class="searchbox-sword" onfocus="this.value=''" type="text">
+                  <input name="tx_indexedsearch[sections]" value="0" type="hidden">
+                  <input name="tx_indexedsearch[submit_button]" value="Search" type="hidden">
+                  <button type="submit" name="submit" class="searchBtn" title="Suche">Suche</button></form></div>                  
                 </nav>
               </div>
             </div>
@@ -108,9 +69,6 @@
         </div>
       </div><!-- / headerWrap -->
 
-      <!--div class="navSocialFixed hidden-xs">
-        <ul class="navSocial clearfix"><li><a href="" target="_blank" class="ico_fb" title="bei Facebook">Facebook</a></li><li><a href="" target="_blank" class="ico_tw">twitter</a></li><li><a href="" target="_blank" class="ico_gp">google+</a></li><li><a href="" target="_blank" class="ico_yt">youtube</a></li></ul>
-      </div-->
 
       <nav class="navbar navbar-default navMainMobile visible-xs-block">
         <div class="container-fluid">
@@ -145,5 +103,5 @@
         </div>
       </nav>
     </header>
-    <div class="stickyHeaderHeightCompensate" style="height: 135px;"></div>
+    <div class="stickyHeaderHeightCompensate" style="height: 65px;"></div>
     
