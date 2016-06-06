@@ -113,20 +113,8 @@ h1.new-single-title {
                 
                 </div>
                 
-                <div class="col-md-12" style="margin-top:10px;margin-bottom:35px;padding-left:0;padding-right:0">
-                    <div class="box st-teaser-box">
-                        <h3 style="display:block">
-                            <a href="/termine">Pastor Spitzer in Korea</a>
-                        </h3>
-                        <a href="/termine"><img alt="Pastor Spitzer in Korea" src="{{paths.theme}}img/volkhardreist.jpg"></a>
-                        <p>
-                            <span class="stichwort">Evangelisation</span>&nbsp;-&nbsp;Wenn Volkhard nicht in Berlin ist, würde dieser Block erscheinen.
-                        </p>
-                        <p class="buch">Pastor Sitzer ist vom 12. Juni bis 26. Juni auf einem Kongress in Gyeongju</p>
-                    </div>
-                </div>
-                
                 {% setcontent artikel = 'entries/1' %}
+                {% include 'partials/_athomeornot.twig' %}
                 
               <div id="c11202" class="csc-default" style="margin-top: 30px;"><div class="csc-header csc-header-n2"><h1>{{ artikel.title }}</h1></div>
               {{ artikel.body }}
